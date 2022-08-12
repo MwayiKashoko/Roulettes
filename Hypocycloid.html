@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="UTF-8">
+
+        <title>Hypocycloid</title>
+
+        <style>
+            body {
+                background: #CCC;
+            }
+
+            #canvas {
+                background-color: black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <canvas id="canvas" width="600" height="600"> </canvas> <br>
+
+        <div>
+            <button onclick="paused = false">Play</button>
+            <button onclick="paused = true">Pause</button>
+            <button onclick="points = [];">Clear</button>
+            <button onclick="points = []; angle = 0; smallerRadius = parseFloat(smallerRadiusSlider.value); largerRadius = parseFloat(largerRadiusSlider.value);">Reset</button>
+            <span> Radius of Smaller Ball:<input id="smallerRadius" type="number" value="50" min="1" max="100"></span>
+            <span> Radius of Larger Ball:<input id="largerRadius" type="number" value="200" min="1" max="300"></span>
+            <span> Speed of the Ball:<input id="speed" type="number" value="0.05" step="0.01" min="0.01" max="0.1"> </span>
+        </div>
+
+        <a href="Roulettes.html">Back To My Website</a>
+
+        <script src="Hypocycloid.js"></script>
+    </body>
+</html>
