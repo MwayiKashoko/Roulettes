@@ -13,8 +13,15 @@
             #canvas {
                 background-color: black;
                 aspect-ratio: 1/1;
-				width: 36vw;
             }
+
+		@media screen and (orientation:portrait) {
+				width: 36vw;
+			}
+
+			@media screen and (orientation:landscape) {
+				height: 70vh;
+			}
         </style>
     </head>
 
